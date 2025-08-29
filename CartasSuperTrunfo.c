@@ -1,22 +1,56 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
 
 int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
+  //Primeira carta
+    char estado;
+    char codigo_da_carta[3];
+    char nome_da_cidade[30];
+    int população;
+    float area;
+    float pib;
+    int número_de_pontos_turísticos;
+
+    //Segunda carta
+    char estado2;
+    char codigo_da_carta2[3];
+    char nome_da_cidade2[30];
+    int populção2;
+    float area2;
+    float pib2;
+    int número_de_pontos_turísticos2;
+
+    printf("*****SUPER TRUNFO*****\n");
+
+    printf("----- CARTA 1 ----- \n");
+
+    printf("Digite uma letra de 'A' a 'H' para o estado:\n");
+    scanf("%c", &estado);
+
+    printf("Digite o código da carta (de 1 a 4):\n");
+    scanf("%s", &codigo_da_carta);
+
+    printf("Digite o nome da cidade:\n");
+    scanf("%s", &nome_da_cidade);
     
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
+    printf("Digite a população da cidade:\n");
+    scanf("%d", &população);
+
+    printf("Digite a area da cidade (em km²):\n");
+    scanf("%f", &area);
     
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+    printf("Digite o PIB da cidade (em R$)\n");
+    scanf("%f",&pib);
+
+    printf("DIgite o nemro de pontos turisticos da cidade:\n");
+    scanf("%d", &número_de_pontos_turísticos);
+
+
+
+
+
+
+
 
     return 0;
 }
